@@ -1,0 +1,24 @@
+/* 1 смуга */
+#header{
+    background: var(--cyan);
+    height: 57px;
+}
+
+#header .container{
+    font-size: 12px;
+    align-items: center;
+    height: 100%;
+    grid-template-columns: 4fr 1fr;
+}
+
+/* контактні дані з іконками*/
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ікнки соціалок */
+.social-icons{
+    text-align: right;
+}

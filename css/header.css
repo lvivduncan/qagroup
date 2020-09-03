@@ -1,24 +1,73 @@
 /* 1 смуга */
-#header{
+
+#header {
     background: var(--cyan);
+    color: var(--white);
     height: 57px;
 }
 
-#header .container{
+#header .container {
     font-size: 12px;
     align-items: center;
     height: 100%;
     grid-template-columns: 4fr 1fr;
+    grid-gap: 5px;
 }
 
+
 /* контактні дані з іконками*/
-.contacts{
+
+.contacts {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.contacts li {
+    display: block;
+    width: 25%;
+}
+
+.contacts li a {
+    color: var(--light);
+    text-decoration: none;
+    display: block;
+}
+
+.contacts li a:nth-child(2) {
+    padding-left: 20px;
+}
+
+.contacts li a:hover i::before {
+    font-size: 14px;
+    -webkit-transition: color .5s, font .5s;
+    transition: color .5s, font .5s;
+}
+
+.contacts li a:hover i::before {
+    color: var(--cyan-light);
+    font-size: 13px;
+}
+
+
 /* ікнки соціалок */
-.social-icons{
+
+.social-icons {
     text-align: right;
+}
+
+.social-icons a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.social-icons a i::before {
+    color: var(--white);
+    -webkit-transition: color .5s;
+    transition: color .5s;
+}
+
+.social-icons a:hover i::before {
+    color: var(--cyan-light);
 }

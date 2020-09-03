@@ -1,4 +1,60 @@
 /* 2 смуга -- логотип та меню */
-#navbar{
-    
+
+#navbar .container {
+    min-height: 72px;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+}
+
+
+/* логотип лінком */
+
+#logo {
+    width: 285px;
+    display: block;
+}
+
+
+/* меню */
+
+#nav ul {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+#nav li {
+    padding: 10px;
+    display: block;
+}
+
+#nav a {
+    color: var(--cyan);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+#nav ul ul {
+    display: none;
+}
+
+
+/* активний телефон */
+
+#phone {
+    color: var(--cyan);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5em;
+    letter-spacing: .2px;
+    text-decoration: none;
+    text-align: right;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+}
+
+#phone:hover {
+    color: var(--cyan-light);
 }

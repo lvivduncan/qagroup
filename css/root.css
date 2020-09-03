@@ -1,46 +1,71 @@
 @import url('//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
-:root{
+:root {
     --gray: #333;
     --cyan: #01487E;
     --cyan-light: #6EC1E4;
     --cyan-dark: #002745;
     --white: #fff;
     --red: #e00000;
-
+    --red-light: #E46E6E;
     --radius-15: 15px;
     --radius-4: 4px;
 }
 
-*{
-    margin: 0;
+*,
+::after,
+::before {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", Sans-serif;
 }
 
 html,
-body{
+body {
     height: 100%;
 }
 
-body{
-    color: var(--white);
-    font-family: "Montserrat",Sans-serif;
+body {
+    color: var(--gray);
+    font-family: "Montserrat", Sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.214em;
+    /* line-height: 1.214em; */
     letter-spacing: .8px;
 }
 
-.container{
+.container {
     width: 1140px;
     margin: auto;
     display: grid;
 }
 
+
 /* font-awesome icons */
-.fa{
-    
+
+.fa:before {
+    font-size: 16px;
+    font-family: "FontAwesome";
 }
+
+img {
+    max-width: 100%!important;
+}
+
+.color-red {
+    color: var(--red)!important;
+}
+
+
+/* тінь та синій бордер */
+
+.block {
+    border: 1px solid var(--cyan);
+    /**/
+}
+
+
+/* заголовок з підкресленням */
+
+.title {}

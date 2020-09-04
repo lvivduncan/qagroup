@@ -8,6 +8,20 @@
     grid-template-areas: 'youtube-h2 youtube-h2 youtube-h2 youtube-h2' 'youtube-1 youtube-2 youtube-3 youtube-4';
 }
 
+@media(max-width: 776px) {
+    #youtube .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'youtube-h2 youtube-h2' 'youtube-1 youtube-2' 'youtube-3 youtube-4';
+    }
+}
+
+@media(max-width: 400px) {
+    #youtube .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'youtube-h2' 'youtube-1' 'youtube-2' 'youtube-3' 'youtube-4';
+    }
+}
+
 #youtube h2 {
     grid-area: youtube-h2;
     font-size: 32px;

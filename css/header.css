@@ -6,12 +6,25 @@
     height: 57px;
 }
 
+@media(max-width: 996px) {
+    #header {
+        height: auto;
+    }
+}
+
 #header .container {
     font-size: 12px;
     align-items: center;
     height: 100%;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr auto;
     grid-gap: 5px;
+}
+
+@media(max-width: 996px) {
+    #header .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'header-contacts' 'header-social-icons';
+    }
 }
 
 
@@ -23,15 +36,49 @@
     justify-content: space-between;
 }
 
+@media(max-width: 996px) {
+    #header .contacts {
+        grid-area: header-contacts;
+        margin: 5px 0;
+    }
+}
+
+@media(max-width: 776px) {
+    #header .contacts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 500px) {
+    #header .contacts {
+        grid-template-columns: 1fr;
+    }
+}
+
 .contacts li {
     display: block;
     width: 25%;
+}
+
+@media(max-width: 776px) {
+    .contacts li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
 }
 
 .contacts li a {
     color: var(--light);
     text-decoration: none;
     display: block;
+}
+
+@media(max-width: 776px) {
+    .contacts li a {
+        display: inline-block;
+    }
 }
 
 .contacts li a:nth-child(2) {
@@ -54,6 +101,14 @@
 
 .social-icons {
     text-align: right;
+}
+
+@media(max-width: 996px) {
+    #header .social-icons {
+        grid-area: header-social-icons;
+        text-align: center;
+        margin: 5px 0;
+    }
 }
 
 .social-icons a {

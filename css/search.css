@@ -3,7 +3,13 @@
 }
 
 #search .container {
-    padding: 25px 50px 25px 50px;
+    padding: 25px 50px;
+}
+
+@media(max-width: 500px) {
+    #search .container {
+        padding: 25px 10px;
+    }
 }
 
 #search form {

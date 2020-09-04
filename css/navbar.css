@@ -6,12 +6,26 @@
     grid-template-columns: auto 1fr auto;
 }
 
+@media(max-width: 500px) {
+    #navbar .container {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* логотип лінком */
 
 #logo {
     width: 285px;
     display: block;
+}
+
+@media(max-width: 500px) {
+    #logo {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
 }
 
 
@@ -23,9 +37,22 @@
     justify-content: space-around;
 }
 
+@media(max-width: 996px) {
+    #nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 #nav li {
     padding: 10px;
     display: block;
+}
+
+@media(max-width: 776px) {
+    #nav li {
+        text-align: center;
+    }
 }
 
 #nav a {
@@ -55,6 +82,27 @@
     transition: color .5s;
 }
 
+@media(max-width: 500px) {
+    #phone {
+        text-align: center;
+    }
+}
+
 #phone:hover {
     color: var(--cyan-light);
+}
+
+@media(max-width: 996px) {
+    #phone span {
+        display: none;
+    }
+    #phone i::before {
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 500px) {
+    #phone span {
+        display: inline-block;
+    }
 }

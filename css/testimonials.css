@@ -10,6 +10,13 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+@media(max-width: 776px) {
+    #testimonials .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'description' 'testimonials' 'partners';
+    }
+}
+
 
 /* опис */
 
@@ -75,9 +82,7 @@
 #testimonials .item blockquote::before {
     content: '""';
     display: inline-block;
-    /* margin: 0 5px; */
     color: var(--cyan);
-    /* font-weight: 800; */
 }
 
 #testimonials .item img {
@@ -103,4 +108,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+/* tmp */
+
+@media(max-width: 776px) {
+    #testimonials .partners figure:nth-child(3),
+    #testimonials .partners figure:nth-child(4) {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    #testimonials .partners figure:nth-child(5) {
+        display: none;
+    }
 }

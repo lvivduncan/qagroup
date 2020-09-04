@@ -10,12 +10,32 @@
     grid-gap: 20px;
 }
 
+@media(max-width: 776px) {
+    #publication .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "publication-header publication-header" "publication-1 publication-2" "publication-3 publication-4";
+    }
+}
+
+@media(max-width: 400px) {
+    #publication .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "publication-header" "publication-1" "publication-2" "publication-3" "publication-4";
+    }
+}
+
 #publication header {
     grid-area: publication-header;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 0 20px;
+}
+
+@media(max-width: 776px) {
+    #publication header {
+        flex-direction: column;
+    }
 }
 
 #publication h2 {

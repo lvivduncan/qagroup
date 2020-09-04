@@ -128,6 +128,12 @@ button:hover {
     display: grid;
 }
 
+@media(max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
 
 /* font-awesome icons */
 
@@ -167,8 +173,3 @@ button:hover {
     border-radius: var(--radius-15);
     background: var(--white);
 }
-
-
-/* заголовок з підкресленням */
-
-.title {}

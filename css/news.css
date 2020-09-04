@@ -7,6 +7,12 @@
     grid-gap: 25px;
 }
 
+@media (max-width: 776px) {
+    #news .container {
+        grid-template-columns: 1fr;
+    }
+}
+
 #news h2 {
     font-size: 32px;
     color: var(--cyan);
@@ -30,8 +36,15 @@
 .events article {
     margin: 0 0 30px;
     display: grid;
-    grid-template-areas: 'events-h3 events-h3 events-h3 events-time' 'events-p events-p events-p events-time';
+    grid-template-areas: "events-h3 events-h3 events-h3 events-time" "events-p events-p events-p events-time";
     grid-gap: 10px;
+}
+
+@media (max-width: 500px) {
+    .events article {
+        margin: 0 0 30px;
+        grid-template-areas: "events-h3" "events-p" "events-time";
+    }
 }
 
 .events h3 {
@@ -57,25 +70,43 @@
     grid-area: events-time;
 }
 
+@media (max-width: 500px) {
+    .events time {
+        text-align: left;
+    }
+}
+
 .events time::before {
-    content: 'Старт:';
+    content: "Старт:";
     display: block;
     font-weight: 400;
     font-size: 13px;
 }
 
+@media (max-width: 500px) {
+    .events time::before {
+        display: inline-block;
+    }
+}
+
 
 /* курси */
-
-.courses {}
 
 .courses article {
     margin: 0 0 30px;
     display: grid;
-    grid-template-areas: 'courses-h3 courses-img' 'courses-p-1 courses-img' 'courses-p-2 courses-img';
+    grid-template-areas: "courses-h3 courses-img" "courses-p-1 courses-img" "courses-p-2 courses-img";
     grid-template-columns: 2fr 165px;
     grid-gap: 10px;
     text-align: left;
+}
+
+@media (max-width: 500px) {
+    .courses article {
+        grid-template-areas: "courses-h3" "courses-p-1" "courses-p-2";
+        grid-template-columns: 1fr;
+        /* display: block; */
+    }
 }
 
 
@@ -102,8 +133,14 @@
 
 /* a>img */
 
-.courses article a {
+.courses article>a {
     grid-area: courses-img;
+}
+
+@media (max-width: 500px) {
+    .courses article>a {
+        display: none;
+    }
 }
 
 .courses h3 {

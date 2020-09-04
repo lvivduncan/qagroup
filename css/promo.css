@@ -6,9 +6,22 @@
     align-items: center;
 }
 
+@media(max-width: 776px) {
+    #promo .container {
+        grid-template-columns: 1fr;
+    }
+}
+
 #promo h1 {
     font-weight: 600;
     font-size: 40px;
     color: var(--cyan);
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+}
+
+@media(max-width: 776px) {
+    #promo h1 {
+        font-size: 32px;
+        text-align: center;
+    }
 }

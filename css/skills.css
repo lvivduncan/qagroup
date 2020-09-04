@@ -11,6 +11,12 @@
     grid-gap: 10px;
 }
 
+@media(max-width: 776px) {
+    #skills .container {
+        grid-template-columns: 1fr;
+    }
+}
+
 .skill {
     color: var(--cyan-light);
 }

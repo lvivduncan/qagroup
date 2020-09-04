@@ -1,0 +1,18 @@
+#search .container {
+    padding: 25px 50px 25px 50px;
+}
+
+#search form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    width: 100%;
+}
+
+#search input[type="search"] {
+    padding: 10px;
+}
+
+#search button {
+    padding: 10px;
+}

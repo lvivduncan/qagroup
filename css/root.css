@@ -1,13 +1,25 @@
-@import url('//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* montserrat */
+
+@import url("//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* 2 roboto */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* icons */
+
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 :root {
     --gray: #333;
-    --cyan: #01487E;
-    --cyan-light: #6EC1E4;
+    --gray-light: #e1e5eb;
+    --cyan: #01487e;
+    --cyan-light: #6ec1e4;
     --cyan-dark: #002745;
     --white: #fff;
     --red: #e00000;
-    --red-light: #E46E6E;
+    --red-light: #e46e6e;
+    --yellow: #e4da6e;
+    --green-light: #73e46e;
     --radius-15: 15px;
     --radius-4: 4px;
 }
@@ -18,7 +30,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", Sans-serif;
 }
 
 html,
@@ -31,8 +42,48 @@ body {
     font-family: "Montserrat", Sans-serif;
     font-size: 14px;
     font-weight: 400;
-    /* line-height: 1.214em; */
-    letter-spacing: .8px;
+    letter-spacing: 0.8px;
+}
+
+img {
+    max-width: 100% !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid var(--gray-light);
+    -webkit-transition: border-color .5s;
+    transition: border-color .5s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus {
+    border-color: var(--cyan-light);
+}
+
+button {
+    color: var(--white);
+    background: var(--cyan);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border: none;
 }
 
 .container {
@@ -49,20 +100,35 @@ body {
     font-family: "FontAwesome";
 }
 
-img {
-    max-width: 100%!important;
-}
+
+/* color text */
 
 .color-red {
-    color: var(--red)!important;
+    color: var(--red) !important;
+}
+
+.color-green-light {
+    color: var(--green-light) !important;
+}
+
+.color-red-light {
+    color: var(--red-light) !important;
+}
+
+.color-yellow {
+    color: var(--yellow) !important;
 }
 
 
-/* тінь та синій бордер */
+/* тінь та голубий бордер */
 
 .block {
-    border: 1px solid var(--cyan);
-    /**/
+    border: 1px dotted var(--cyan-light);
+    box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 15px;
+    border-radius: var(--radius-15);
 }
 
 

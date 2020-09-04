@@ -1,4 +1,57 @@
+#services {
+    margin: 50px 0;
+}
+
 #services .container {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+}
+
+#services .service {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+
+/* іконки блоків */
+
+#services i {
+    display: block;
+    border: 3px solid var(--gray);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#services i::before {
+    font-size: 24px;
+    position: relative;
+    top: -2px;
+}
+
+
+/* кольори бордеру іконок */
+
+#services i.color-red-light {
+    border-color: var(--red-light);
+}
+
+#services i.color-green-light {
+    border-color: var(--green-light);
+}
+
+#services i.color-yellow {
+    border-color: var(--yellow);
+}
+
+
+/* назви блоків */
+
+#services h3 {
+    font-size: 20px;
+    color: var(--cyan);
+    padding: 0 20px;
+    margin: 0;
 }

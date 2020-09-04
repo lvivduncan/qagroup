@@ -62,10 +62,22 @@
 
 #testimonials .item blockquote {
     grid-area: item-blockquote;
-    color: var(--gray);
+    /* color: var(--gray); */
+    color: var(--cyan);
     margin: 0 0 20px;
     text-align: left;
     letter-spacing: 0;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+#testimonials .item blockquote::after,
+#testimonials .item blockquote::before {
+    content: '""';
+    display: inline-block;
+    /* margin: 0 5px; */
+    color: var(--cyan);
+    /* font-weight: 800; */
 }
 
 #testimonials .item img {
@@ -86,6 +98,7 @@
 
 #testimonials .partners {
     grid-area: partners;
+    margin: 20px 0 0;
     /* tmp */
     display: flex;
     justify-content: space-between;

@@ -21,8 +21,12 @@
     --red-light: #e46e6e;
     --yellow: #e4da6e;
     --green-light: #73e46e;
+    /**/
+    /* --opacity5: rgba(0, 0, 0, .5); */
+    --opacity7: rgba(0, 0, 0, .7);
+    /**/
     --radius-15: 15px;
-    --radius-4: 4px;
+    /* --radius-4: 4px; */
 }
 
 *,

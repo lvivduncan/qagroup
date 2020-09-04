@@ -1,0 +1,96 @@
+/* 4 публікації */
+
+#publication {
+    margin: 25px 0;
+}
+
+#publication .container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "publication-header publication-header publication-header publication-header" "publication-1 publication-2 publication-3 publication-4";
+    grid-gap: 20px;
+}
+
+#publication header {
+    grid-area: publication-header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px;
+}
+
+#publication h2 {
+    font-size: 32px;
+    color: var(--cyan);
+    line-height: 1;
+}
+
+#publication h2 a {
+    color: var(--cyan);
+    text-decoration: none;
+}
+
+#publication article:nth-child(1) {
+    grid-area: publication-1;
+}
+
+#publication article:nth-child(2) {
+    grid-area: publication-2;
+}
+
+#publication article:nth-child(3) {
+    grid-area: publication-3;
+}
+
+#publication article:nth-child(4) {
+    grid-area: publication-4;
+}
+
+#publication article {
+    height: 145px;
+    position: relative;
+    background-size: cover!important;
+}
+
+#publication article a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--opacity7);
+    color: var(--white);
+    text-decoration: none;
+    /**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /**/
+    overflow: hidden;
+}
+
+#publication article a strong {
+    padding: 5px;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: transform .5s;
+    transition: transform .5s;
+}
+
+#publication article a:hover strong {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+#publication article a span {
+    font-size: 13px;
+    padding: 5px;
+    transform: translateY(200px);
+    transform-origin: 0;
+    -webkit-transition: transform .5s;
+    transition: transform .5s;
+}
+
+#publication article a:hover span {
+    transform: translateY(0);
+}

@@ -84,7 +84,38 @@ button {
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
     border: none;
+    -webkit-transition: background .5s;
+    transition: background .5s;
 }
+
+button:hover {
+    background: var(--cyan-dark);
+}
+
+
+/* лінк, як кнопка */
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--white);
+    background: var(--cyan);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: background .5s;
+    transition: background .5s;
+}
+
+.button:hover {
+    background: var(--cyan-dark);
+}
+
+
+/* основна обгортка для контенту */
 
 .container {
     width: 1140px;
@@ -129,6 +160,7 @@ button {
     text-align: center;
     padding: 15px;
     border-radius: var(--radius-15);
+    background: var(--white);
 }
 
 

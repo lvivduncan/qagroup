@@ -1,0 +1,120 @@
+#news {
+    margin: 25px 0;
+}
+
+#news .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+}
+
+#news h2 {
+    font-size: 32px;
+    color: var(--cyan);
+    line-height: 1;
+    margin: 0 0 20px;
+}
+
+#news h2 a {
+    color: var(--cyan);
+    text-decoration: none;
+}
+
+
+/* події */
+
+.events {}
+
+
+/* окрема подія */
+
+.events article {
+    margin: 0 0 30px;
+    display: grid;
+    grid-template-areas: 'events-h3 events-h3 events-h3 events-time' 'events-p events-p events-p events-time';
+    grid-gap: 10px;
+}
+
+.events h3 {
+    text-align: left;
+    margin: 0;
+    grid-area: events-h3;
+}
+
+.events h3 a {
+    text-decoration: none;
+    color: var(--cyan);
+}
+
+.events p {
+    text-align: left;
+    font-size: 13px;
+    grid-area: events-p;
+}
+
+.events time {
+    text-align: right;
+    font-weight: 600;
+    grid-area: events-time;
+}
+
+.events time::before {
+    content: 'Старт:';
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+
+/* курси */
+
+.courses {}
+
+.courses article {
+    margin: 0 0 30px;
+    display: grid;
+    grid-template-areas: 'courses-h3 courses-img' 'courses-p-1 courses-img' 'courses-p-2 courses-img';
+    grid-template-columns: 2fr 165px;
+    grid-gap: 10px;
+    text-align: left;
+}
+
+
+/* h3 */
+
+.courses article:first-of-type(1) {
+    grid-area: courses-h3;
+}
+
+
+/* p */
+
+.courses article:first-of-type(2) {
+    grid-area: courses-p-1;
+}
+
+
+/* p */
+
+.courses article:first-of-type(3) {
+    grid-area: courses-p-2;
+}
+
+
+/* a>img */
+
+.courses article a {
+    grid-area: courses-img;
+}
+
+.courses h3 {
+    margin: 0;
+}
+
+.courses h3 a {
+    text-decoration: none;
+    color: var(--cyan);
+}
+
+.courses p {
+    font-size: 13px;
+}

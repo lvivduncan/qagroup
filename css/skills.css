@@ -1,0 +1,28 @@
+/* синій блок з анімаційними скілами */
+
+#skills {
+    margin: 50px 0;
+}
+
+#skills .container {
+    border-radius: var(--radius-15);
+    background: var(--cyan);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.skill {
+    color: var(--cyan-light);
+}
+
+.skill .count {
+    font-size: 69px;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.skill .count::after {
+    content: '+';
+}

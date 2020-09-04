@@ -1,0 +1,93 @@
+/* відгуки та логотипи партнерів */
+
+#testimonials {
+    margin: 25px 0;
+}
+
+#testimonials .container {
+    grid-template-areas: "description testimonials" "partners partners";
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* опис */
+
+#testimonials .description {
+    text-align: left;
+    grid-area: description;
+}
+
+#testimonials .description h3 {
+    font-size: 32px;
+    color: var(--cyan);
+    line-height: 1;
+    margin: 0 0 20px;
+    position: relative;
+}
+
+#testimonials .description h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background: var(--cyan-light);
+}
+
+#testimonials .description p {
+    font-size: 12px;
+    line-height: 2em;
+    letter-spacing: 0;
+}
+
+
+/* відгуки */
+
+#testimonials .testimonials {
+    grid-area: testimonials;
+}
+
+
+/* окремий відгук */
+
+#testimonials .item {
+    display: grid;
+    grid-template-areas: 'item-blockquote item-blockquote' 'item-img item-span';
+    grid-template-columns: 100px 1fr;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#testimonials .item blockquote {
+    grid-area: item-blockquote;
+    color: var(--gray);
+    margin: 0 0 20px;
+    text-align: left;
+    letter-spacing: 0;
+}
+
+#testimonials .item img {
+    grid-area: item-img;
+    border-radius: 100%;
+    width: 92px;
+}
+
+#testimonials .item span {
+    grid-area: item-span;
+    color: var(--cyan-light);
+    text-align: left;
+    font-size: 24px;
+}
+
+
+/* логотипи партнерів*/
+
+#testimonials .partners {
+    grid-area: partners;
+    /* tmp */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -12,6 +12,7 @@
 :root {
     --gray: #333;
     --gray-light: #e1e5eb;
+    /* --gray-dark: #222; */
     --cyan: #01487e;
     --cyan-light: #6ec1e4;
     --cyan-dark: #002745;

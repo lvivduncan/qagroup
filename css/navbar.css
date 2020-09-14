@@ -4,20 +4,28 @@
     min-height: 72px;
     align-items: center;
     grid-template-columns: auto 1fr auto;
+    grid-template-areas: 'logo nav phone';
+}
+
+@media(max-width: 776px) {
+    #navbar .container {
+        padding: 10px 0;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: 'logo phone' 'nav nav';
+    }
 }
 
 @media(max-width: 500px) {
     #navbar .container {
         grid-template-columns: 1fr;
+        grid-template-areas: 'logo' 'phone' 'nav';
     }
 }
-
-
-/* логотип лінком */
 
 #logo {
     width: 285px;
     display: block;
+    grid-area: logo;
 }
 
 @media(max-width: 500px) {
@@ -28,21 +36,24 @@
     }
 }
 
-
-/* меню */
+#nav {
+    grid-area: nav;
+}
 
 #nav ul {
     display: flex;
-    padding: 10px;
+    /* padding: 10px; */
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-@media(max-width: 996px) {
+
+/* @media(max-width: 996px) {
     #nav ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-}
+} */
 
 #nav li {
     padding: 10px;
@@ -73,13 +84,13 @@
 #phone {
     color: var(--cyan);
     font-size: 18px;
-    font-weight: 700;
     line-height: 1.5em;
     letter-spacing: .2px;
     text-decoration: none;
     text-align: right;
     -webkit-transition: color .5s;
     transition: color .5s;
+    grid-area: phone;
 }
 
 @media(max-width: 500px) {
@@ -105,4 +116,9 @@
     #phone span {
         display: inline-block;
     }
+}
+
+#phone svg {
+    width: 18px;
+    fill: var(--cyan);
 }

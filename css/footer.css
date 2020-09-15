@@ -30,7 +30,6 @@
 
 #footer-description {
     text-align: center;
-    padding: 0 10px;
     color: var(--white);
 }
 
@@ -45,9 +44,6 @@
         text-align: center;
     }
 }
-
-
-/* контактні дані; блок має бути вертикально */
 
 #footer .contacts {
     flex-direction: column;
@@ -86,48 +82,42 @@
     margin: 0 5px 0 0;
 }
 
-
-/* соціальні групи у стовпчик */
-
 #footer .social-icons {
     text-align: left;
 }
 
+#footer .social-icons a {
+    display: flex;
+    margin: 0 0 7px;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--white);
+}
+
 @media(max-width: 776px) {
-    #footer .social-icons {
-        text-align: right;
+    #footer .social-icons a {
+        justify-content: flex-end;
     }
 }
 
 @media(max-width: 500px) {
-    #footer .social-icons {
-        text-align: left;
+    #footer .social-icons a {
+        justify-content: flex-start;
     }
 }
 
-#footer .social-icons a {
-    display: block;
-    margin: 0 0 5px;
+#footer .social-icons svg {
+    margin-right: 10px;
+    fill: var(--white);
 }
 
-
-/* меню теж у стовпчик */
-
-#footer li a {
+#footer nav a {
     display: block;
-    text-decoration: none;
     color: var(--white);
+    margin: 0 0 7px;
+    text-decoration: none;
 }
 
-
-/* костиль! */
-
-#footer .nav li {
-    display: block;
-    margin: 0 0 5px;
-}
-
-#footer .nav li a.color-red {
-    color: var(--white)!important;
-    font-weight: 800;
+#footer a:hover {
+    color: var(--cyan-light)!important;
 }

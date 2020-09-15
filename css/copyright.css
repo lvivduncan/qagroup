@@ -1,0 +1,19 @@
+#copyright {
+    background: var(--opacity7);
+}
+
+#copyright .container {
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--gray-light);
+    display: block;
+}
+
+#copyright .container a {
+    color: var(--gray-light);
+}
+
+#copyright .container a:hover {
+    text-decoration: none;
+}

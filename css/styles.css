@@ -1,5 +1,6 @@
 @import url('./root.css');
 @import url('./contacts.css');
+@import url('./social-icons.css');
 @import url('./header.css');
 @import url('./navbar.css');
 @import url('./promo.css');
@@ -11,3 +12,4 @@
 @import url('./publication.css');
 @import url('./youtube.css');
 @import url('./footer.css');
+@import url('./copyright.css');

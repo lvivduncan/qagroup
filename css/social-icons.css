@@ -1,0 +1,20 @@
+.social-icons {
+    text-align: right;
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: var(--cyan-light);
+}
+
+.social-icons svg {
+    height: 16px;
+    fill: var(--cyan-light);
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.social-icons a:hover svg {
+    fill: var(--white);
+}

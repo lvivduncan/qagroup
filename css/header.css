@@ -36,27 +36,7 @@
     }
 }
 
-.social-icons {
-    text-align: right;
-}
-
 #header .social-icons {
     grid-area: header-social-icons;
     text-align: center;
-}
-
-.social-icons a {
-    text-decoration: none;
-    margin-left: 10px;
-}
-
-.social-icons svg {
-    height: 16px;
-    fill: var(--cyan-light);
-    -webkit-transition: .5s;
-    transition: .5s;
-}
-
-.social-icons a:hover svg {
-    fill: var(--white);
 }

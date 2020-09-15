@@ -44,8 +44,7 @@
 }
 
 #testimonials .description p {
-    font-size: 12px;
-    line-height: 2em;
+    line-height: 1.6em;
     letter-spacing: 0;
 }
 
@@ -69,7 +68,6 @@
 
 #testimonials .item blockquote {
     grid-area: item-blockquote;
-    /* color: var(--gray); */
     color: var(--cyan);
     margin: 0 0 20px;
     text-align: left;
@@ -80,7 +78,7 @@
 
 #testimonials .item blockquote::after,
 #testimonials .item blockquote::before {
-    content: '""';
+    content: '"';
     display: inline-block;
     color: var(--cyan);
 }

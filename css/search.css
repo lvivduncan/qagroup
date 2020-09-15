@@ -25,4 +25,12 @@
 
 #search button {
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search svg {
+    fill: var(--white);
+    width: 14px;
 }

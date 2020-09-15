@@ -1,28 +1,33 @@
-#news {
+.news {
     margin: 25px 0;
 }
 
-#news .container {
+.news .container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 25px;
 }
 
 @media (max-width: 776px) {
-    #news .container {
+    .news .container {
         grid-template-columns: 1fr;
     }
 }
 
-#news h2 {
+.news h2 {
     font-size: 32px;
     color: var(--cyan);
     line-height: 1;
     margin: 0 0 20px;
 }
 
-#news h2 a {
+.news h2 a {
     color: var(--cyan);
     text-decoration: none;
+}
+
+.news svg {
+    width: 14px;
+    fill: var(--gray);
 }
 
 

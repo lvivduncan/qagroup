@@ -38,32 +38,10 @@
 
 #nav {
     grid-area: nav;
-}
-
-#nav ul {
     display: flex;
-    /* padding: 10px; */
     justify-content: space-around;
     flex-wrap: wrap;
-}
-
-
-/* @media(max-width: 996px) {
-    #nav ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-} */
-
-#nav li {
-    padding: 10px;
-    display: block;
-}
-
-@media(max-width: 776px) {
-    #nav li {
-        text-align: center;
-    }
+    padding: 10px 0;
 }
 
 #nav a {
@@ -74,12 +52,12 @@
     text-decoration: none;
 }
 
-#nav ul ul {
-    display: none;
+@media(max-width: 500px) {
+    #nav a {
+        padding: 10px 5px;
+        display: inline-block;
+    }
 }
-
-
-/* активний телефон */
 
 #phone {
     color: var(--cyan);
@@ -96,6 +74,7 @@
 @media(max-width: 500px) {
     #phone {
         text-align: center;
+        color: var(--red);
     }
 }
 

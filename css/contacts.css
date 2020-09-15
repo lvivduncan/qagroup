@@ -1,0 +1,27 @@
+/* телефони, вайбери, вацапи... */
+
+.contacts {
+    display: flex;
+}
+
+.contacts a {
+    color: var(--light);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 776px) {
+    .contacts a {
+        justify-content: center;
+    }
+    .contacts span {
+        display: none;
+    }
+}
+
+.contacts svg {
+    width: 16px;
+    fill: var(--white);
+    margin: 0 5px 0 0;
+}

@@ -22,10 +22,6 @@
     align-items: center;
 }
 
-.contacts {
-    display: flex;
-}
-
 #header .contacts {
     grid-area: header-contacts;
     display: grid;
@@ -38,40 +34,6 @@
     #header .contacts {
         margin: 5px 0;
     }
-}
-
-
-/* .contacts li {
-    display: block;
-}
-
-@media (max-width: 776px) {
-    .contacts li {
-        text-align: center;
-        margin: 10px 0;
-    }
-} */
-
-.contacts a {
-    color: var(--light);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-@media (max-width: 776px) {
-    .contacts a {
-        justify-content: center;
-    }
-    .contacts span {
-        display: none;
-    }
-}
-
-.contacts svg {
-    width: 16px;
-    fill: var(--white);
-    margin: 0 5px 0 0;
 }
 
 .social-icons {

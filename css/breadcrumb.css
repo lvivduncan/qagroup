@@ -1,0 +1,28 @@
+#breadcrumb {
+    display: block;
+    padding: 10px 0;
+}
+
+#breadcrumb li {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+
+#breadcrumb li::before {
+    content: ' < ';
+    color: var(--cyan);
+}
+
+#breadcrumb li:first-child::before {
+    content: '';
+}
+
+#breadcrumb li a {
+    padding: 5px 0;
+    color: var(--cyan);
+    letter-spacing: 1.2px;
+}
+
+#breadcrumb li a:hover {
+    text-decoration: none;
+}

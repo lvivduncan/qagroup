@@ -23,6 +23,11 @@
     padding: 10px;
 }
 
+
+/* #search input[type="search"]:focus {
+    border: var(--cyan-light);
+} */
+
 #search button {
     padding: 10px;
     display: flex;

@@ -1,0 +1,60 @@
+#page header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+@media(max-width: 500px) {
+    #page header {
+        display: block;
+    }
+}
+
+.autors {
+    width: 50%;
+}
+
+@media(max-width: 500px) {
+    .autors {
+        width: 100%;
+    }
+}
+
+.autors span {
+    display: block;
+}
+
+.rating {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media(max-width: 500px) {
+    .rating {
+        width: 100%;
+        margin: 10px 0 0;
+        justify-content: flex-start;
+    }
+}
+
+.rating span {
+    margin: 0 5px 0 0;
+}
+
+@media(max-width: 500px) {
+    .rating span {
+        color: var(--cyan);
+    }
+}
+
+.rating svg {
+    display: inline-block;
+    width: 16px;
+    fill: var(--yellow);
+}
+
+.preview {
+    margin: 15px 0;
+}

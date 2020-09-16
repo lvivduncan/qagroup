@@ -14,3 +14,26 @@
     width: 100%!important;
     border-radius: var(--radius-15);
 }
+
+.item ul {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.item ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.item ul li svg {
+    width: 18px;
+    fill: var(--gray);
+    margin: 0 5px 0 0;
+}
+
+.item ul li strong {
+    margin-left: auto;
+}

@@ -1,0 +1,30 @@
+.lists {
+    margin: 0 0 15px;
+}
+
+.lists article {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0 0 20px;
+}
+
+.lists article h3 {
+    text-align: left;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.7;
+    padding: 0 10px 0 0;
+}
+
+.lists article a {
+    text-decoration: none;
+}
+
+.lists article time {
+    white-space: nowrap;
+}
+
+.lists h3 {
+    text-align: center;
+}

@@ -7,6 +7,7 @@
 @import url('./item.css');
 @import url('./countdown.css');
 @import url('./page.css');
+@import url('./tabs.css');
 @import url('./promo.css');
 @import url('./services.css');
 @import url('./search.css');
@@ -15,7 +16,9 @@
 @import url('./testimonials.css');
 @import url('./publication.css');
 @import url('./youtube.css');
-@import url('./three.css');
+@import url('./card.css');
+@import url('./one-one.css');
+@import url('./one-one-one.css');
 @import url('./one-two.css');
 @import url('./two-one.css');
 @import url('./footer.css');

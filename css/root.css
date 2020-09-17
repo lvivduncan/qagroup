@@ -59,11 +59,13 @@ h6 {
 
 a {
     text-decoration: underline;
+    color: var(--cyan-dark);
 }
 
 a:hover,
 a:focus {
     text-decoration: none;
+    color: var(--gray);
 }
 
 hr {
@@ -105,23 +107,23 @@ button:hover {
 
 /* лінк, як кнопка */
 
-.button {
+a.button {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 25px;
     line-height: 20px;
     font-weight: 600;
     font-size: 16px;
-    color: var(--white);
-    background: var(--cyan);
+    color: var(--white)!important;
+    background: var(--cyan)!important;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     -webkit-transition: background .5s;
     transition: background .5s;
 }
 
-.button:hover {
-    background: var(--cyan-dark);
+a.button:hover {
+    background: var(--cyan-dark)!important;
 }
 
 
@@ -169,4 +171,23 @@ button:hover {
     padding: 15px;
     border-radius: var(--radius-15);
     background: var(--white);
+}
+
+
+/* заголовок у центрі */
+
+.title {
+    text-align: center;
+    width: 1200px;
+    margin: 20px auto;
+}
+
+@media(max-width: 1240px) {
+    .title {
+        width: 95%;
+    }
+}
+
+.title h2 {
+    font-size: 24px;
 }

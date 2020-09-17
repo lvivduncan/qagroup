@@ -1,0 +1,31 @@
+.card {
+    height: 240px;
+    border: 1px solid var(--gray);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-15);
+}
+
+.card h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.card span {
+    font-size: 13px;
+    color: var(--cyan);
+    margin: 0 0 10px;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.price::after {
+    content: 'грн';
+}

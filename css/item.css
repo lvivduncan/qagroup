@@ -26,6 +26,7 @@
     justify-content: flex-start;
     align-items: center;
     margin: 10px 0;
+    text-align: left;
 }
 
 .item ul li svg {
@@ -36,4 +37,5 @@
 
 .item ul li strong {
     margin-left: auto;
+    text-align: right;
 }

@@ -15,6 +15,15 @@
     border-radius: var(--radius-15);
 }
 
+.item h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.item h3 a {
+    text-decoration: none;
+}
+
 .item ul {
     display: block;
     margin: 10px 0;
@@ -35,7 +44,8 @@
     margin: 0 5px 0 0;
 }
 
-.item ul li strong {
+.item ul li time {
     margin-left: auto;
     text-align: right;
+    font-weight: 700;
 }

@@ -1,5 +1,5 @@
 /* до початку курсу лишилося */
 
-#countdown strong::after {
+#countdown time::after {
     content: ' днів';
 }

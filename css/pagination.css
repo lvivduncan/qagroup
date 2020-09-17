@@ -1,0 +1,29 @@
+/* посторінкова навігація */
+
+.pagination {
+    text-align: center;
+    margin: 30px 0 0;
+}
+
+.pagination ul,
+.pagination li {
+    display: inline-block;
+}
+
+.pagination li a {
+    padding: 10px 15px;
+    background: var(--cyan);
+    color: var(--white);
+    text-decoration: none;
+    -webkit-transition: background .5s;
+    transition: background .5s;
+}
+
+.pagination li a:hover,
+.pagination li a:focus {
+    background: var(--cyan-dark);
+}
+
+.pagination .active {
+    background: var(--gray);
+}

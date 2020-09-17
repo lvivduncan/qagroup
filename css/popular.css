@@ -1,0 +1,60 @@
+.popular {
+    margin: 0 0 20px;
+}
+
+.popular h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.popular article {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'popular-figure popular-time' 'popular-figure popular-h4';
+    grid-template-rows: auto 1fr;
+    margin: 0 0 30px;
+}
+
+.popular figure {
+    grid-area: popular-figure;
+    margin: 0 20px 0 0;
+}
+
+.popular img {
+    border-radius: var(--radius-15);
+}
+
+.popular time {
+    grid-area: popular-time;
+    color: var(--gray-center);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.popular svg {
+    fill: var(--gray-center);
+    width: 16px;
+    margin: 0 5px 0 0;
+}
+
+.popular h4 {
+    grid-area: popular-h4;
+}
+
+.popular h4 a {
+    text-decoration: none;
+}
+
+.popular :nth-of-type(1) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'popular-figure' 'popular-time' 'popular-h4';
+    grid-template-rows: 1fr;
+}
+
+.popular :nth-of-type(1) figure {
+    margin: 0 0 20px;
+}

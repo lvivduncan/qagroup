@@ -1,3 +1,8 @@
+#page {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
 #page>header {
     display: flex;
     justify-content: space-between;
@@ -10,8 +15,45 @@
     }
 }
 
+#page header time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--gray-center);
+}
+
+#page header time svg {
+    width: 16px;
+    margin: 0 5px 0 0;
+    fill: var(--gray-center);
+}
+
 #page p {
     line-height: 1.8;
+    margin: 0 0 20px;
+}
+
+#page blockquote {
+    margin: 10px 10px 10px 50px;
+    padding-left: 20px;
+    border-left: 3px solid var(--cyan);
+    line-height: 1.7;
+    font-style: italic;
+    font-family: "Montserrat", Sans-serif;
+}
+
+#page ul,
+#page ol {
+    margin: 10px 0 10px 40px;
+}
+
+#page li {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+#page em {
+    color: var(--red);
 }
 
 .autors {

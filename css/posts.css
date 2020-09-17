@@ -1,0 +1,40 @@
+/* вертикальний допис, фото зліва, текст справа */
+
+
+/* .posts {
+    margin: 20px 0;
+} */
+
+.posts article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'posts-figure posts-h3 posts-h3' 'posts-figure posts-p posts-p';
+    grid-gap: 10px;
+    text-align: left;
+    margin: 0 0 20px;
+}
+
+.posts figure {
+    grid-area: posts-figure;
+}
+
+.posts figure img {
+    width: 100%;
+}
+
+.posts h3 {
+    grid-area: posts-h3;
+    margin: 0;
+    font-size: 20px;
+}
+
+.posts h3 a {
+    text-decoration: none;
+}
+
+.posts p {
+    grid-area: posts-p;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+}

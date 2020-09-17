@@ -2,6 +2,10 @@
     margin: 25px 0;
 }
 
+aside #search {
+    margin: 0 0 20px;
+}
+
 #search .container {
     padding: 25px 50px;
 }
@@ -22,11 +26,6 @@
 #search input[type="search"] {
     padding: 10px;
 }
-
-
-/* #search input[type="search"]:focus {
-    border: var(--cyan-light);
-} */
 
 #search button {
     padding: 10px;

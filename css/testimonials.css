@@ -51,14 +51,14 @@
 
 /* відгуки */
 
-#testimonials .testimonials {
+#testimonials ul {
     grid-area: testimonials;
 }
 
 
 /* окремий відгук */
 
-#testimonials .item {
+#testimonials li {
     display: grid;
     grid-template-areas: 'item-blockquote item-blockquote' 'item-img item-span';
     grid-template-columns: 100px 1fr;
@@ -66,7 +66,7 @@
     font-weight: 300;
 }
 
-#testimonials .item blockquote {
+#testimonials li blockquote {
     grid-area: item-blockquote;
     color: var(--cyan);
     margin: 0 0 20px;
@@ -76,20 +76,20 @@
     line-height: 1.6;
 }
 
-#testimonials .item blockquote::after,
-#testimonials .item blockquote::before {
+#testimonials li blockquote::after,
+#testimonials li blockquote::before {
     content: '"';
     display: inline-block;
     color: var(--cyan);
 }
 
-#testimonials .item img {
+#testimonials li img {
     grid-area: item-img;
     border-radius: 100%;
     width: 92px;
 }
 
-#testimonials .item span {
+#testimonials li span {
     grid-area: item-span;
     color: var(--cyan-light);
     text-align: left;

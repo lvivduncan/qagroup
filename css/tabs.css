@@ -70,6 +70,7 @@ dt{
     box-shadow: 0 5px 10px 0 rgba(0,0,0,.12);
     padding: 10px;
     margin: 10px 0;
+    color: var(--cyan);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,8 +78,14 @@ dt{
 /* відповідь */
 dd{
     display: none;
+    padding: 10px;
+    margin-left: 10px;
 }
 
 dd.active{
     display: block;
+}
+
+dl span{
+    color: var(--cyan);
 }

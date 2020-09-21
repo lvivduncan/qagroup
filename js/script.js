@@ -128,6 +128,7 @@ if(accordeon.length > 0){
     const question = accordeon[0].querySelectorAll('dt');
     const answer = accordeon[0].querySelectorAll('dd');
 
+    // todo: change span from + to -
     question.forEach((item, i) => item.addEventListener('click', () => {
         answer.forEach(el => el.classList.remove('active'));
         answer[i].classList.add('active');

@@ -48,78 +48,68 @@
     letter-spacing: 0;
 }
 
-
-/* відгуки */
-
-#testimonials ul {
+/* відгуки */ 
+/* горизонтальний скрол на 1 елемент */
+#levus-testimonials{
     grid-area: testimonials;
+    position: relative;
+    overflow: hidden;
 }
 
+#levus-testimonials ul{
+    white-space: nowrap;
+    position: relative;
+    left: -100%;
+}
 
-/* окремий відгук */
-
-#testimonials li {
-    display: grid;
-    grid-template-areas: 'item-blockquote item-blockquote' 'item-img item-span';
-    grid-template-columns: 100px 1fr;
+#levus-testimonials li{
+    display: inline-block;
     font-size: 14px;
     font-weight: 300;
+    vertical-align: top;
 }
 
-#testimonials li blockquote {
-    grid-area: item-blockquote;
+#levus-testimonials li blockquote {
     color: var(--cyan);
     margin: 0 0 20px;
     text-align: left;
     letter-spacing: 0;
     font-style: italic;
     line-height: 1.6;
+    white-space: normal;
 }
 
-#testimonials li blockquote::after,
-#testimonials li blockquote::before {
+#levus-testimonials li blockquote::after,
+#levus-testimonials li blockquote::before {
     content: '"';
     display: inline-block;
     color: var(--cyan);
 }
 
-#testimonials li img {
-    grid-area: item-img;
-    border-radius: 100%;
-    width: 92px;
+#levus-testimonials figure{
+    display: grid;
+    grid-template-columns: 100px 1fr;
 }
 
-#testimonials li span {
-    grid-area: item-span;
+#levus-testimonials figure img {
+    border-radius: 100%;
+    width: 92px;
+    height: 92px;
+}
+
+#levus-testimonials figure figcaption {
     color: var(--cyan-light);
     text-align: left;
     font-size: 24px;
 }
 
+.move {
+    transform: translateX(-100%);
+}
 
 /* логотипи партнерів*/
 
 #testimonials .partners {
     grid-area: partners;
     margin: 20px 0 0;
-    /* tmp */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/* tmp */
-
-@media(max-width: 776px) {
-    #testimonials .partners figure:nth-child(3),
-    #testimonials .partners figure:nth-child(4) {
-        display: none;
-    }
-}
-
-@media(max-width: 500px) {
-    #testimonials .partners figure:nth-child(5) {
-        display: none;
-    }
 }

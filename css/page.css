@@ -58,6 +58,7 @@
 
 .autors {
     width: 50%;
+    line-height: 1.7;
 }
 
 @media(max-width: 500px) {

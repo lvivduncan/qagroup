@@ -109,6 +109,7 @@
 
 // tabs 
 const tabs = document.querySelectorAll('.tabs li');
+
 if(tabs.length > 0){
     const panes = document.querySelectorAll('.tabs .panes > div');
     
@@ -117,5 +118,18 @@ if(tabs.length > 0){
         tabs[i].classList.add('active');
         panes.forEach(pane => pane.classList.remove('active'));
         panes[i].classList.add('active');
+    }));
+}
+
+// accordeon
+const accordeon = document.getElementsByTagName('dl');
+
+if(accordeon.length > 0){
+    const question = accordeon[0].querySelectorAll('dt');
+    const answer = accordeon[0].querySelectorAll('dd');
+
+    question.forEach((item, i) => item.addEventListener('click', () => {
+        answer.forEach(el => el.classList.remove('active'));
+        answer[i].classList.add('active');
     }));
 }

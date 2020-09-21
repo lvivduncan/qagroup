@@ -1,19 +1,21 @@
 // levus-skills || https://github.com/lvivduncan/levus-skills
 {
     const skills = document.querySelectorAll('.levus-skills');
-    const start = document.documentElement.clientHeight;
-    window.addEventListener('scroll', () => {
-        const change = Math.floor(skills[0].getBoundingClientRect().top);
-        const sum = Math.floor(start - change + 10);
-        if (sum === 0 || sum === 1 || sum === 2 || sum === 3 || sum === 4 || sum === 5 || sum === 6 || sum === 7 || sum === 8 || sum === 9 || sum === 10) {
-            skills.forEach(skill => delay(skill, skill.dataset.result, skill.dataset.speed));
-        }
-    });
-    function delay(selector, num = 2, speed = 1){
-        for (let index = 0; index <= num; index++) {
-            setTimeout( () => {
-                selector.innerHTML = index;            
-            }, index * speed * 30);
+    if(skills.length > 0){
+        const start = document.documentElement.clientHeight;
+        skills && window.addEventListener('scroll', () => {
+            const change = Math.floor(skills[0].getBoundingClientRect().top);
+            const sum = Math.floor(start - change + 10);
+            if (sum === 0 || sum === 1 || sum === 2 || sum === 3 || sum === 4 || sum === 5 || sum === 6 || sum === 7 || sum === 8 || sum === 9 || sum === 10) {
+                skills.forEach(skill => delay(skill, skill.dataset.result, skill.dataset.speed));
+            }
+        });
+        function delay(selector, num = 2, speed = 1){
+            for (let index = 0; index <= num; index++) {
+                setTimeout( () => {
+                    selector.innerHTML = index;            
+                }, index * speed * 30);
+            }
         }
     }
 }
@@ -22,29 +24,30 @@
 {
     // wrapper
     const wrapper = document.getElementById('levus-testimonials');
-    // all
-    let items = wrapper.querySelectorAll('#levus-testimonials li');
-    //
-    const ul = wrapper.querySelector('ul');
+    if(wrapper){
+        // all
+        let items = wrapper.querySelectorAll('#levus-testimonials li');
+        //
+        const ul = wrapper.querySelector('ul');
 
-    if (items.length <= 3) {
         // cloned and append elements
         items.forEach(element => ul.append(element.cloneNode(true)));
         // new nodelist
         items = wrapper.querySelectorAll('#levus-testimonials li');
+        
+        setInterval(() => {
+            const last = ul.lastElementChild;
+            ul.prepend(last);
+            // destroy transition
+            ul.style.transition = 'none';
+            ul.classList.add('move');
+            setTimeout(() => {
+                ul.classList.remove('move');
+                ul.style.transition = '.5s';
+            }, 4000); 
+        }, 5000);
     }
-    
-    setInterval(() => {
-        const last = ul.lastElementChild;
-        ul.prepend(last);
-        // destroy transition
-        ul.style.transition = 'none';
-        ul.classList.add('move');
-        setTimeout(() => {
-            ul.classList.remove('move');
-            ul.style.transition = '.5s';
-        }, 4000); 
-    }, 5000);
+
 }
 
 // https://github.com/lvivduncan/levus-horizontal-scroll
@@ -102,6 +105,17 @@
             }
         });
     }
+}
 
-
+// tabs 
+const tabs = document.querySelectorAll('.tabs li');
+if(tabs.length > 0){
+    const panes = document.querySelectorAll('.tabs .panes > div');
+    
+    tabs.forEach((tab, i) => tab.addEventListener('click', () => {
+        tabs.forEach(tab => tab.classList.remove('active'));
+        tabs[i].classList.add('active');
+        panes.forEach(pane => pane.classList.remove('active'));
+        panes[i].classList.add('active');
+    }));
 }

@@ -52,7 +52,6 @@
 /* горизонтальний скрол на 1 елемент */
 #levus-testimonials{
     grid-area: testimonials;
-    position: relative;
     overflow: hidden;
 }
 
@@ -60,6 +59,7 @@
     white-space: nowrap;
     position: relative;
     left: -100%;
+    margin: 0;
 }
 
 #levus-testimonials li{
@@ -77,6 +77,8 @@
     font-style: italic;
     line-height: 1.6;
     white-space: normal;
+    border-left: none;
+    padding-left: 0;
 }
 
 #levus-testimonials li blockquote::after,
@@ -87,14 +89,16 @@
 }
 
 #levus-testimonials figure{
-    display: grid;
-    grid-template-columns: 100px 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 #levus-testimonials figure img {
     border-radius: 100%;
     width: 92px;
     height: 92px;
+    margin-right: 10px;
 }
 
 #levus-testimonials figure figcaption {
@@ -111,5 +115,4 @@
 
 #testimonials .partners {
     grid-area: partners;
-    margin: 20px 0 0;
 }

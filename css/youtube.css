@@ -61,6 +61,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(228,108,108,.5);
+    -webkit-transition: background .5s;
+    transition: background .5s;
+}
+
+.youtube article a:hover {
+    background: rgba(228,108,108,0)
 }
 
 .youtube article svg {

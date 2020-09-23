@@ -161,6 +161,18 @@ a.button:hover {
     color: var(--yellow) !important;
 }
 
+/* align */
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
 
 /* тінь та голубий бордер */
 
@@ -179,14 +191,7 @@ a.button:hover {
 
 .center {
     text-align: center;
-    width: 1200px;
     margin: 30px auto;
-}
-
-@media(max-width: 1240px) {
-    .center {
-        width: 95%;
-    }
 }
 
 .center h2 {

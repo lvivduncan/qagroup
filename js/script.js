@@ -127,10 +127,13 @@ const accordeon = document.getElementsByTagName('dl');
 if(accordeon.length > 0){
     const question = accordeon[0].querySelectorAll('dt');
     const answer = accordeon[0].querySelectorAll('dd');
+    const span = accordeon[0].querySelectorAll('span');
 
     // todo: change span from + to -
     question.forEach((item, i) => item.addEventListener('click', () => {
         answer.forEach(el => el.classList.remove('active'));
         answer[i].classList.add('active');
+        span.forEach(el => el.innerHTML = '+');
+        span[i].innerHTML = '-';
     }));
 }

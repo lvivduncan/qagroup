@@ -44,8 +44,14 @@
     margin: 0 5px 0 0;
 }
 
-.item ul li time {
+.item ul li time,
+.item ul li span{
     margin-left: auto;
     text-align: right;
     font-weight: 700;
+}
+
+/* aside */
+aside .item{
+    margin-bottom: 20px;
 }

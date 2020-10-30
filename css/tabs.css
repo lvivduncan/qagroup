@@ -21,28 +21,29 @@
     align-items: center;
     justify-content: space-evenly;
     margin: 0!important;
+    flex-wrap: wrap;
 }
 
-@media(max-width: 500px) {
+/* @media(max-width: 500px) {
     .tabs header ul {
         flex-wrap: wrap;
     }
-}
+} */
 
 .tabs header li {
     display: inline-block;
     color: var(--white);
-    padding: 0 5px;
+    padding: 5px;
     margin: 0!important;
     cursor: pointer;
 }
 
-@media(max-width: 500px) {
+/* @media(max-width: 500px) {
     .tabs header li {
         width: 50%;
         padding: 10px;
     }
-}
+} */
 
 .tabs header li.active {
     color: var(--cyan-light);

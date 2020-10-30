@@ -60,13 +60,15 @@
     position: relative;
     left: -100%;
     margin: 0;
+    display: grid;
+    grid-template-columns: repeat(20,100%);
 }
 
 #levus-testimonials li{
-    display: inline-block;
+    display: block;
     font-size: 14px;
     font-weight: 300;
-    vertical-align: top;
+    /* vertical-align: top; */
 }
 
 #levus-testimonials li blockquote {

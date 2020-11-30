@@ -1,0 +1,22 @@
+/* три колонки */
+.column .container{
+    display: block;
+    columns: 3;
+    column-gap: 20px;
+}
+
+@media(max-width:776px){
+    .column .container{
+        columns: 2;
+    }
+}
+
+@media(max-width:500px){
+    .column .container{
+        columns: 1;
+    }
+}
+
+.column .container article{
+    margin: 0 20px 20px;
+}

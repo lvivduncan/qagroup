@@ -1,4 +1,17 @@
 
+// slowly menu
+$("#id-1-nav li a").click(function() {
+    $("html, body").animate({
+        scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, 
+    {
+        duration: 1000,
+        easing: "swing"
+    });
+    return false;
+});
+
+
 // response
 $('.owl-carousel').owlCarousel({
     loop:true,
